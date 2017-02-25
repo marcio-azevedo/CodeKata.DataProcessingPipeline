@@ -1,5 +1,4 @@
-{
-  "title": "CodeKata.DomainDrivenDesign.Domain",
+﻿{
   "version": "1.0.0-*",
 
   "dependencies": {
