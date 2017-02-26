@@ -25,3 +25,4 @@ well as the risk of making mistakes.
 ### The Vision ###
 Create a tool that addresses the problems enumered above, to allow verifying all the information in a centralized tool to audit all the 
 mentioned processes and, if possible, even automation.
+
