@@ -1,8 +1,14 @@
 # Release Audit Tool #
 A code kata to exemplify the use of [Onion Architecture structure](https://www.infoq.com/news/2014/10/ddd-onion-architecture).
 
-Frameworks used:
-* [NancyFx](http://nancyfx.org/) - [How to use NancyFx with DotNet Core](https://www.hanselman.com/blog/ExploringAMinimalWebAPIWithNETCoreAndNancyFX.aspx)
+Frameworks / Tools used:
+* [NancyFx](http://nancyfx.org/) - "_...lightweight, low-ceremony, framework for building HTTP based services on .NET and Mono._"
+* [NUnit](https://www.nunit.org/) - unit-testing framework for .NET (to enable integration with Visual Studio, make sure the [plugin](https://github.com/nunit/docs/wiki/Visual-Studio-Test-Adapter) is installed).
+* [Moq](https://github.com/Moq/moq4) - mocking framework for .NET.
+* [AutoMoq](https://github.com/darrencauthon/AutoMoq) - an "auto-mocking" container that creates objects for you.
+* [FluentMigrator](https://github.com/schambers/fluentmigrator) - a migration framework for .NET.
+* [StructureMap](http://structuremap.github.io/) - IoC/DI container for .NET.
+* [NHibernate](http://nhibernate.info/) - open source object-relational mapper for the .NET framework.
 
 
 ### The Problem ###
@@ -26,3 +32,5 @@ well as the risk of making mistakes.
 Create a tool that addresses the problems enumered above, to allow verifying all the information in a centralized tool to audit all the 
 mentioned processes and, if possible, even automation.
 
+### How to contribute? ###
+Please check [Up for Grabs](https://github.com/marcio-azevedo/CodeKata.ReleaseAuditTool/projects/1) and start contributing!
