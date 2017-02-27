@@ -1,18 +1,6 @@
 # Release Audit Tool #
 A code kata to exemplify the use of [Onion Architecture structure](https://www.infoq.com/news/2014/10/ddd-onion-architecture).
 
-Frameworks / Tools used:
-* [NancyFx](http://nancyfx.org/) - "_...lightweight, low-ceremony, framework for building HTTP based services on .NET and Mono._"
-* [NUnit](https://www.nunit.org/) - unit-testing framework for .NET (to enable integration with Visual Studio, make sure the [plugin](https://github.com/nunit/docs/wiki/Visual-Studio-Test-Adapter) is installed).
-* [Moq](https://github.com/Moq/moq4) - mocking framework for .NET.
-* [AutoMoq](https://github.com/darrencauthon/AutoMoq) - an "auto-mocking" container that creates objects for you.
-* [FluentMigrator](https://github.com/schambers/fluentmigrator) - a migration framework for .NET.
-* [StructureMap](http://structuremap.github.io/) - IoC/DI container for .NET.
-* [NHibernate](http://nhibernate.info/) - open source object-relational mapper for the .NET framework.
-* [AutoMapper](http://automapper.org/) - a convention-based object-object mapper.
-* [BenchmarkDotNet](http://benchmarkdotnet.org/) - .NET library for benchmarking.
-
-
 ### The Problem ###
 A team adopted a specfic workflow to guide the status of their User Stories (US) in each Sprint (ex: ToDo, Developing, Reviewing, Testing, Accepted, Done). 
 Each time an US gets _Done_ is ready to Release, and, because the team uses a [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow) approach 
@@ -36,3 +24,15 @@ mentioned processes and, if possible, even automation.
 
 ### How to contribute? ###
 Please check [Up for Grabs](https://github.com/marcio-azevedo/CodeKata.ReleaseAuditTool/projects/1) and start contributing!
+
+Frameworks / Tools used:
+* [NancyFx](http://nancyfx.org/) - "_...lightweight, low-ceremony, framework for building HTTP based services on .NET and Mono._"
+* [NUnit](https://www.nunit.org/) - unit-testing framework for .NET (to enable integration with Visual Studio, make sure the [plugin](https://github.com/nunit/docs/wiki/Visual-Studio-Test-Adapter) is installed).
+* [Moq](https://github.com/Moq/moq4) - mocking framework for .NET.
+* [AutoMoq](https://github.com/darrencauthon/AutoMoq) - an "auto-mocking" container that creates objects for you.
+* [FluentMigrator](https://github.com/schambers/fluentmigrator) - a migration framework for .NET.
+* [StructureMap](http://structuremap.github.io/) - IoC/DI container for .NET.
+* [NHibernate](http://nhibernate.info/) - open source object-relational mapper for the .NET framework.
+* [AutoMapper](http://automapper.org/) - a convention-based object-object mapper.
+* [BenchmarkDotNet](http://benchmarkdotnet.org/) - .NET library for benchmarking.
+

@@ -1,4 +1,5 @@
 ﻿using Nancy;
+using Nancy.Security;
 
 namespace Infrastructure.Web.Modules
 {
@@ -6,6 +7,8 @@ namespace Infrastructure.Web.Modules
     {
         public BacklogModule() : base("/backlog")
         {
+            this.RequiresAuthentication();
+
             Get["/"] = parameters => "Hello World";
         }
     }

@@ -1,4 +1,5 @@
 ﻿using Nancy;
+using Nancy.Security;
 
 namespace Infrastructure.Web.Modules
 {
@@ -7,6 +8,8 @@ namespace Infrastructure.Web.Modules
     {
         public CodeRepositoryModule() : base("/code")
         {
+            this.RequiresAuthentication();
+
             Get["/"] = parameters => "Hello World";
         }
     }
