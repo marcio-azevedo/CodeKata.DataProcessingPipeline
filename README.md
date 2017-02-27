@@ -9,6 +9,8 @@ Frameworks / Tools used:
 * [FluentMigrator](https://github.com/schambers/fluentmigrator) - a migration framework for .NET.
 * [StructureMap](http://structuremap.github.io/) - IoC/DI container for .NET.
 * [NHibernate](http://nhibernate.info/) - open source object-relational mapper for the .NET framework.
+* [AutoMapper](http://automapper.org/) - a convention-based object-object mapper.
+* [BenchmarkDotNet](http://benchmarkdotnet.org/) - .NET library for benchmarking.
 
 
 ### The Problem ###
