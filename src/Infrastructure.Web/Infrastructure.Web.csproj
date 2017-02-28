@@ -98,6 +98,10 @@
       <Project>{dd179094-4899-4efd-955a-5d4b5283f38f}</Project>
       <Name>Domain</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Infrastructure.DependencyResolution\Infrastructure.DependencyResolution.csproj">
+      <Project>{50848bd5-eb16-44e9-8183-2d9739b343f1}</Project>
+      <Name>Infrastructure.DependencyResolution</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Infrastructure\Infrastructure.csproj">
       <Project>{3dc90b3b-c842-4b49-8fd9-48ded989a607}</Project>
       <Name>Infrastructure</Name>
