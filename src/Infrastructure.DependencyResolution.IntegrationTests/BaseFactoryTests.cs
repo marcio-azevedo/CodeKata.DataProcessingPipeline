@@ -1,4 +1,4 @@
-﻿using Infrastructure.Configuration;
+﻿using Domain.Configuration;
 using NUnit.Framework;
 
 namespace Infrastructure.DependencyResolution.IntegrationTests
@@ -6,9 +6,10 @@ namespace Infrastructure.DependencyResolution.IntegrationTests
     [TestFixture]
     public class BaseFactoryTests
     {
-        [SetUp]
+        [OneTimeSetUp]
         public void SetUp()
         {
+            //var _mocker = new AutoMoqer();
         }
 
         [Test]

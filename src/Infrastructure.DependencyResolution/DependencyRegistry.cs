@@ -1,4 +1,5 @@
-﻿using Infrastructure.Configuration;
+﻿using Domain.Configuration;
+using Infrastructure.Configuration;
 using StructureMap;
 
 namespace Infrastructure.DependencyResolution
