@@ -1,5 +1,6 @@
 ﻿using System;
 using Domain.Configuration;
+using Domain.Logging;
 using StructureMap;
 
 namespace Infrastructure.DependencyResolution
@@ -32,6 +33,14 @@ namespace Infrastructure.DependencyResolution
         public static IConfigurationAdapter GetConfigurationAdapter()
         {
             return BaseFactory.Instance.Resolve<IConfigurationAdapter>();
+        }
+    }
+
+    public class LoggerFactory
+    {
+        public static ILogger GetLogger()
+        {
+            return BaseFactory.Instance.Resolve<ILogger>();
         }
     }
 }

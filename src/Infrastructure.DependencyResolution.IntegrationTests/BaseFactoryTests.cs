@@ -1,4 +1,5 @@
 ﻿using Domain.Configuration;
+using Domain.Logging;
 using NUnit.Framework;
 
 namespace Infrastructure.DependencyResolution.IntegrationTests
@@ -35,6 +36,19 @@ namespace Infrastructure.DependencyResolution.IntegrationTests
             // Assert
             Assert.IsNotNull(instance);
             Assert.AreEqual(BaseFactory.Instance.Container.GetInstance<IConfigurationAdapter>(), instance);
+        }
+
+        [Test]
+        public void BaseFactory_ResolveILogger_Succeeds()
+        {
+            // Arrange
+
+            // Act
+            var instance = BaseFactory.Instance.Resolve<ILogger>();
+
+            // Assert
+            Assert.IsNotNull(instance);
+            Assert.AreEqual(BaseFactory.Instance.Container.GetInstance<ILogger>(), instance);
         }
     }
 }

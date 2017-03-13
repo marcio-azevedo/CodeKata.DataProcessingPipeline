@@ -1,11 +1,12 @@
-﻿using Nancy;
+﻿using Domain.Logging;
+using Nancy;
 using Nancy.Security;
 
 namespace Infrastructure.Web.Modules
 {
     public class BacklogModule : NancyModule
     {
-        public BacklogModule() : base("/backlog")
+        public BacklogModule(ILogger logger) : base("/backlog")
         {
             this.RequiresAuthentication();
 

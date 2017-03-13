@@ -1,4 +1,5 @@
 ﻿using System;
+using Domain.Logging;
 using Nancy;
 using Nancy.Bootstrapper;
 using Nancy.TinyIoc;
@@ -7,6 +8,8 @@ namespace Infrastructure.Web
 {
     public class Bootstrapper : DefaultNancyBootstrapper
     {
+        protected readonly ILogger Logger;
+
         // The bootstrapper enables you to reconfigure the composition of the framework,
         // by overriding the various methods and properties.
         // For more information https://github.com/NancyFx/Nancy/wiki/Bootstrapper
@@ -32,9 +35,11 @@ namespace Infrastructure.Web
 
         private dynamic OnError(NancyContext nancyContext, Exception exception)
         {
-            // Logging! Serilog?
             // https://github.com/NancyFx/Nancy/wiki/The-Application-Before%2C-After-and-OnError-pipelines
-            throw new NotImplementedException();
+            Logger.Fatal($"Error on method: {nancyContext.Request.Method}");
+            Logger.Fatal(exception);
+
+            return null;
         }
     }
 }

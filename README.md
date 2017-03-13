@@ -29,10 +29,10 @@ Frameworks / Tools used:
 * [NancyFx](http://nancyfx.org/) - "_...lightweight, low-ceremony, framework for building HTTP based services on .NET and Mono._"
 * [NUnit](https://www.nunit.org/) - unit-testing framework for .NET (to enable integration with Visual Studio, make sure the [plugin](https://github.com/nunit/docs/wiki/Visual-Studio-Test-Adapter) is installed).
 * [Moq](https://github.com/Moq/moq4) - mocking framework for .NET.
+* [NLog](http://nlog-project.org/) - NLog is a free logging platform for .NET
 * [AutoMoq](https://github.com/darrencauthon/AutoMoq) - an "auto-mocking" container that creates objects for you.
 * [FluentMigrator](https://github.com/schambers/fluentmigrator) - a migration framework for .NET.
 * [StructureMap](http://structuremap.github.io/) - IoC/DI container for .NET.
 * [NHibernate](http://nhibernate.info/) - open source object-relational mapper for the .NET framework.
 * [AutoMapper](http://automapper.org/) - a convention-based object-object mapper.
 * [BenchmarkDotNet](http://benchmarkdotnet.org/) - .NET library for benchmarking.
-

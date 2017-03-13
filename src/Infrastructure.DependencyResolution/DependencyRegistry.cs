@@ -1,5 +1,7 @@
 ﻿using Domain.Configuration;
+using Domain.Logging;
 using Infrastructure.Configuration;
+using Infrastructure.Logging;
 using StructureMap;
 
 namespace Infrastructure.DependencyResolution
@@ -13,6 +15,7 @@ namespace Infrastructure.DependencyResolution
             Container = new Container(_ =>
             {
                 _.For<IConfigurationAdapter>().Singleton().Use<ConfigurationAdapter>();
+                _.For<ILogger>().Singleton().Use<NLogLogger>();
             });
         }
     }
