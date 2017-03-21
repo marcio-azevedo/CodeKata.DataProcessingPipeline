@@ -36,3 +36,5 @@ Frameworks / Tools used:
 * [NHibernate](http://nhibernate.info/) - open source object-relational mapper for the .NET framework.
 * [AutoMapper](http://automapper.org/) - a convention-based object-object mapper.
 * [BenchmarkDotNet](http://benchmarkdotnet.org/) - .NET library for benchmarking.
+* [Nancy.Swagger](https://github.com/yahehe/Nancy.Swagger) - Nancy Swagger plugin (alternative to [Swashbuckle](https://github.com/domaindrivendev/Swashbuckle) for ASP.NET Web API).
+ 
