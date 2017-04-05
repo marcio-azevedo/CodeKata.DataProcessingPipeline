@@ -74,10 +74,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Bootstrapper.cs" />
-    <Compile Include="Modules\CodeRepositoryModule.cs" />
-    <Compile Include="Modules\BacklogModule.cs" />
-    <Compile Include="Modules\DeployModule.cs" />
-    <Compile Include="Modules\ReleasesModule.cs" />
+    <Compile Include="Modules\HealthCheckModule.cs" />
+    <Compile Include="Modules\PerformanceModule.cs" />
+    <Compile Include="Modules\LogViewModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

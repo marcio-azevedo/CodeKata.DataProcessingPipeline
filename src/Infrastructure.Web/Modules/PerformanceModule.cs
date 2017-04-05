@@ -4,10 +4,9 @@ using Nancy.Security;
 
 namespace Infrastructure.Web.Modules
 {
-    // check https://octopus.com/docs/api-and-integration/octopus.client
-    public class DeployModule : NancyModule
+    public class PerformanceModule : NancyModule
     {
-        public DeployModule(ILogger logger) : base("/deploys")
+        public PerformanceModule(ILogger logger) : base("/performance")
         {
             this.RequiresAuthentication();
 

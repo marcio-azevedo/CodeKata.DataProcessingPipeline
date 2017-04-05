@@ -4,10 +4,9 @@ using Nancy.Security;
 
 namespace Infrastructure.Web.Modules
 {
-    // check https://github.com/octokit/octokit.net
-    public class CodeRepositoryModule : NancyModule
+    public class LogViewModule : NancyModule
     {
-        public CodeRepositoryModule(ILogger logger) : base("/code")
+        public LogViewModule(ILogger logger) : base("/logview")
         {
             this.RequiresAuthentication();
 
