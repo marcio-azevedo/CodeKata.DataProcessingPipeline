@@ -1,29 +1,31 @@
-# Release Audit Tool #
+# Data Processing Pipeline #
 A code kata to exemplify the use of [Onion Architecture structure](https://www.infoq.com/news/2014/10/ddd-onion-architecture).
 
 ### The Problem ###
-A team adopted a specfic workflow to guide the status of their User Stories (US) in each Sprint (ex: ToDo, Developing, Reviewing, Testing, Accepted, Done). 
-Each time an US gets _Done_ is ready to Release, and, because the team uses a [Gitflow](https://www.atlassian.com/git/tutorials/comparing-workflows#gitflow-workflow) approach 
-(with [feature branches](http://nvie.com/posts/a-successful-git-branching-model/)), the code (related to the US) should be merged into _develop_ branch.
 
-The release to production typically occurs every week, so, by that time, the team needs to ensure that:
-- all finished US (status = Done) are merged into develop branch;
-- all Pull Requests (PR) related to that US are closed and merged;
-- US should be _tagged_ with the version of the release;
-- all HandOver (HO) notes, if any, should be added to the Release log;
-- all changes regarding the application that need manual intervention or oversee (like settings, configurations, database schema updates, ...) should be verified in the UAT and Live environments;
-- an internal email with the release notes should announce all teams of the next release, and include the details of the release (time, executors, etc).
-
-These are just some of the constant and manual work needed to be done before each release that depending of each case (and tools) can be somehow complex and permissive to errors.
-If, for example, the team uses 4 different tools for: Scrum board (User Story's information and status), Code repositories, Deploy Automation and Wiki, the ammount of work increases, as 
-well as the risk of making mistakes.
+You have a system that integrates with 3rd-party systems (through APIs) and from an User perspective he can 
+change data on their system / application and should be updated also on yours. This requires background 
+synchronization to ensure that data is up to date in both systems (assuming that 3rd-party system API allows 
+that). You can easily build services to do that but you want it to be (horizontally) scalable in terms of 
+processing capacity, ensuring the minimal complexity needed in your code base (keep in mind that you can 
+integrate hundreds or even thousands of systems).
+So, assuming that we have an [Onion Architecture structure](https://www.infoq.com/news/2014/10/ddd-onion-architecture) 
+approach on our application, we should expect "only" to have a new client consumer per new 3rd-party system, 
+that will translate the data into our Domain and then just use our Application layer to import / update 
+data. Because you depend on 3rd-party systems API to sync it might be a good thing to have health and 
+performance monitoring, to allow checking:
+- if 3rd-party APIs are up or down;
+- if you have problems on any of your data processing pipeline infrastructure components;
+- detailed errors that occur while processing data.
 
 ### The Vision ###
-Create a tool that addresses the problems enumered above, to allow verifying all the information in a centralized tool to audit all the 
-mentioned processes and, if possible, even automation.
+Provide an easy-to-setup data processing pipeline that addresses the problem, enables horizontal scaling 
+and offers additional tools (web) for integration, healthcheck and performance monitoring, being decoupled 
+from actual dependencies at the same time.
 
 ### How to contribute? ###
-Please check [Up for Grabs](https://github.com/marcio-azevedo/CodeKata.ReleaseAuditTool/projects/1) and start contributing!
+Please check [Up for Grabs](https://github.com/marcio-azevedo/CodeKata.DataProcessingPipeline/projects/1) 
+and start contributing!
 
 Frameworks / Tools used:
 * [NancyFx](http://nancyfx.org/) - "_...lightweight, low-ceremony, framework for building HTTP based services on .NET and Mono._"
